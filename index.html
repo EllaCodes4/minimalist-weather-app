@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;500;600;700;800;900&family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <link
@@ -29,6 +30,45 @@
     <title>Ella's Alternative Weather App</title>
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="weather">
+            <h2 class="current-time">3:33 PM</h2>
+            <div class="location">San Francisco, CA</div>
+            <div class="weather-icon">☁</div>
+            <small class="weather-description"> Cloudy </small>
+            <h1 class="temperature">92 <span class="units">°F</span></h1>
+            <h2 class="high-low-temp">76° / 90°</h2>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="search-bar">
+            <form id="search-form">
+              <div class="row">
+                <div class="col">
+                  <input
+                    type="search"
+                    placeholder="Enter city here..."
+                    class="form-control search-input"
+                    id="search-input"
+                  />
+                </div>
+                <div class="col">
+                  <button type="submit" id="search-button" value="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <button class="current-location-button" id="current-location-button">
+            <i class="fa-solid fa-location-dot"></i>
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
+:
