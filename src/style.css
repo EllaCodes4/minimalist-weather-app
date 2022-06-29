@@ -1,1 +1,70 @@
+video.background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0;
+}
+.weather {
+  text-align: center;
+  backdrop-filter: blur(20px);
+  padding: 140px 0;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 3;
+}
+.current-time,
+.location {
+  font-size: 20px;
+}
+
+.weather-icon {
+  font-size: 40px;
+  line-height: 45px;
+}
+
+.temperature {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.units {
+  font-size: 30px;
+}
+
+.high-low-temp {
+  font-size: 16px;
+}
+.search {
+  text-align: center;
+  padding: 140px 0;
+}
+.current-location-button,
+.search-button {
+  border-radius: 40px;
+  border: 1px solid white;
+  opacity: 0.7;
+  padding: 5px 10px;
+}
+.current-location-button {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+}
+.search-input {
+  display: inline;
+  width: 175px;
+  border-radius: 30px;
+}

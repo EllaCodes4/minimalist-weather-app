@@ -30,41 +30,43 @@
     <title>Ella's Alternative Weather App</title>
   </head>
   <body>
+    <video
+      class="background-video"
+      src="videos/cloudy-sky.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
     <div class="container">
       <div class="row">
-        <div class="col-4">
-          <div class="weather">
-            <h2 class="current-time">3:33 PM</h2>
-            <div class="location">San Francisco, CA</div>
-            <div class="weather-icon">☁</div>
-            <small class="weather-description"> Cloudy </small>
-            <h1 class="temperature">92 <span class="units">°F</span></h1>
-            <h2 class="high-low-temp">76° / 90°</h2>
-          </div>
+        <div class="col-6 weather">
+          <h2 class="current-time">3:33 PM</h2>
+          <div class="location">San Francisco, CA</div>
+          <div class="weather-icon">☁</div>
+          <small class="weather-description"> Cloudy </small>
+          <h1 class="temperature">92 <span class="units">°F</span></h1>
+          <h2 class="high-low-temp">76° / 90°</h2>
         </div>
-        <div class="col-6">
-          <div class="search-bar">
-            <form id="search-form">
-              <div class="row">
-                <div class="col">
-                  <input
-                    type="search"
-                    placeholder="Enter city here..."
-                    class="form-control search-input"
-                    id="search-input"
-                  />
-                </div>
-                <div class="col">
-                  <button type="submit" id="search-button" value="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
+        <div class="col-6 search">
           <button class="current-location-button" id="current-location-button">
             <i class="fa-solid fa-location-dot"></i>
           </button>
+          <form id="search-form">
+            <input
+              type="search"
+              placeholder="Enter city here..."
+              class="form-control search-input"
+              id="search-input"
+            />
+            <button
+              type="submit"
+              id="search-button"
+              value="search"
+              class="search-button"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
         </div>
       </div>
     </div>
