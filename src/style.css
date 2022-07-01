@@ -20,23 +20,29 @@ body {
 }
 .weather {
   text-align: center;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(75px);
   padding: 140px 0;
   color: rgba(255, 255, 255, 0.95);
   line-height: 3;
+  height: 100vh;
+  margin: auto;
 }
 .current-time,
 .location {
-  font-size: 20px;
+  font-size: 23px;
+}
+
+.weather-description {
+  font-size: 16px;
 }
 
 .weather-icon {
-  font-size: 40px;
+  font-size: 65px;
   line-height: 45px;
 }
 
 .temperature {
-  font-size: 50px;
+  font-size: 85px;
   font-weight: 600;
 }
 
@@ -45,7 +51,7 @@ body {
 }
 
 .high-low-temp {
-  font-size: 16px;
+  font-size: 22px;
 }
 .search {
   text-align: center;
