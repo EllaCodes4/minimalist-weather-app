@@ -8,22 +8,22 @@ function displayTime(date) {
 }
 
 function displayWeather(response) {
-  console.log(response.data);
   let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = response.data.name;
   let weatherIcon = document.querySelector("#weather-icon");
+  let weatherDescription = document.querySelector("#weather-description");
+  let temperatureElement = document.querySelector("#temperature");
+  let highTemp = document.querySelector("#high-temp");
+  let lowTemp = document.querySelector("#low-temp");
+
+  cityElement.innerHTML = response.data.name;
   weatherIcon.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherIcon.setAttribute("alt", response.data.weather[0].description);
-  let weatherDescription = document.querySelector("#weather-description");
   weatherDescription.innerHTML = response.data.weather[0].description;
-  let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
-  let highTemp = document.querySelector("#high-temp");
   highTemp.innerHTML = Math.round(response.data.main.temp_max);
-  let lowTemp = document.querySelector("#low-temp");
   lowTemp.innerHTML = Math.round(response.data.main.temp_min);
 }
 
