@@ -27,13 +27,22 @@ function displayWeather(response) {
   lowTemp.innerHTML = Math.round(response.data.main.temp_min);
 }
 
+function search(city) {
+  let apiKey = "39b37e744d3d61db56e033dc0b8a5694";
+  let unit = "imperial";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
+  axios.get(apiUrl).then(displayWeather);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-input").value;
+  search(city);
+}
+
 let currentTime = document.querySelector("#current-time");
 let now = new Date();
 currentTime.innerHTML = displayTime(now);
 
-let apiKey = "39b37e744d3d61db56e033dc0b8a5694";
-let unit = "imperial";
-let city = "New York";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
-
-axios.get(apiUrl).then(displayWeather);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

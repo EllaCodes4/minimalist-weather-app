@@ -42,7 +42,11 @@
         <div class="col-6 weather">
           <h2 class="current-time" id="current-time">3:33 PM</h2>
           <div class="location" id="city">San Francisco, CA</div>
-          <img id="weather-icon" src="" alt="" />
+          <img
+            id="weather-icon"
+            src="http://openweathermap.org/img/wn/02d@2x.png"
+            alt=""
+          />
           <div class="weather-description" id="weather-description">Cloudy</div>
           <h1 class="temperature">
             <span id="temperature">92</span><span class="units"> °F</span>
@@ -62,14 +66,13 @@
               class="form-control search-input"
               id="search-input"
             />
-            <button
+            <input
               type="submit"
               id="search-button"
-              value="search"
+              value="Search" 
               class="search-button"
-            >
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+              id="search-button"
+            /> <i class="fa-solid fa-magnifying-glass"></i>
           </form>
         </div>
       </div>
