@@ -41,11 +41,17 @@
       <div class="row">
         <div class="col-6 weather">
           <h2 class="current-time">3:33 PM</h2>
-          <div class="location">San Francisco, CA</div>
-          <div class="weather-icon">☁</div>
-          <small class="weather-description"> Cloudy </small>
-          <h1 class="temperature">92 <span class="units">°F</span></h1>
-          <h2 class="high-low-temp">76° / 90°</h2>
+          <div class="location" id="city">San Francisco, CA</div>
+          <div class="weather-icon" id="weather-icon">☁</div>
+          <small class="weather-description" id="weather-description">
+            Cloudy
+          </small>
+          <h1 class="temperature">
+            <span id="temperature">92</span><span class="units"> °F</span>
+          </h1>
+          <h2 class="high-low-temp">
+            <span id="low-temp">76</span>° / <span id="high-temp">90</span>°
+          </h2>
         </div>
         <div class="col-6 search">
           <button class="current-location-button" id="current-location-button">
