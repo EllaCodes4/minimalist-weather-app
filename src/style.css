@@ -84,3 +84,10 @@ body {
   border-radius: 30px;
   text-transform: capitalize;
 }
+
+.signature {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  color: white;
+}
