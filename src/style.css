@@ -105,7 +105,7 @@ footer a {
 
 @media (max-width: 600px) {
   .weather {
-    padding: 88px 0;
+    padding: 88px 8px;
   }
 }
 
