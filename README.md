@@ -16,7 +16,7 @@ This project was a fun project. It started just after I had finished my original
 
 - In building this project, I learned that I could create something useful and polished within a few hours. 
 - I also learned that I am capable of replicating designs, and that it starts with inspecting first, identifying what is needed and where (h1 here, div there) and then crafting a plan on how I was going to convert that design into code. 
-- I also learned that that the tech and skills needed to build these apps wasn't at all as difficult and intimidating as I had previously thought. I could do this and in fact, did-- twice.    
+- I also learned that that the tech and skills needed to build these apps wasn't at all as difficult and intimidating as I had previously thought. I could do this. I had the skills and the drive to try and fail and learn something new.
 ## Optimizations
 
 Refactors, performance improvements, responsive and mobile-friendly
