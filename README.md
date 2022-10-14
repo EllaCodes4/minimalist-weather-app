@@ -12,7 +12,7 @@ Another fully functional weather app, with a more sleek, simplified, and minimal
 
 ## Lessons Learned
 
-This project was a fun project. It started just after I had finished my original weather app. My fiance saw the weather widget on our Smart TV and said, "Oh, that's a cool design for a Weather App. Can you do something like that?" I looked at it and said, "I can try! It'll be good practice!" One late night later, it was done! I had replicated the design. The next morning, I showed my fiance and he was like, "Oh snap! That was fast! You did that last night?" 
+This project was a fun project. It started just after I had finished my original weather app. My fiance saw a weather widget on TV's home screen and said, "Oh, that's a cool design for a Weather App. Can you do something like that?" I looked at it and said, "I can try! It'll be good practice!" Curious and motivated, I stayed up late, trying, and succeeded in replicating the design that night. The next day, I showed my fiance and he was like, "Oh snap! That was fast! You did that last night?!" 
 
 - In building this project, I learned that I could create something useful and polished within a few hours. 
 - I also learned that I am capable of replicating designs, and that it starts with inspecting first, identifying what is needed and where (h1 here, div there) and then crafting a plan on how I was going to convert that design into code. 
